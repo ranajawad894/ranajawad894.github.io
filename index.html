@@ -17,6 +17,7 @@
   <div class="wrap">
     <div class="topbar-links">
       <a href="tel:+447345088622">📞 +44‑7345‑088622</a>
+      <a href="tel:+923250718869">📞 +92-325-0718869</a>
       <a href="mailto:info@muwahidtravels.com">✉ info@muwahidtravels.com</a>
       <span>47-B Nawab Town Raiwand Road, Lahore, Pakistan</span>
     </div>
@@ -77,7 +78,7 @@
       <div class="eyebrow">Trusted Umrah Operator · Gulf Flight Specialists</div>
       <h1>Your journey to the <em>Haramain</em>,<br>planned with sincerity.</h1>
       <p class="lead">Muwahid Travels arranges complete Umrah packages and air ticket bookings across the Gulf region —
-        handled personally, priced fairly, and built on years of trust from families across Lahore and beyond.</p>
+        handled personally, priced fairly, and built on years of trust from families across Sialkot and beyond.</p>
       <div class="hero-ctas">
         <a href="#packages" class="btn btn-gold">View Umrah Packages</a>
         <a href="#flights" class="btn btn-outline">Book a Flight</a>
@@ -606,15 +607,15 @@
         <!-- Journey -->
         <div class="row">
           <div class="field">
-            <label>Departure Date</label>
-            <input type="date" name="Departure_Date" required>
+            <label for="departureDate">Departure Date</label>
+            <input type="date" id="departureDate" name="Departure_Date" required>
           </div>
 
           <div class="field">
-            <label>Trip Type</label>
-            <select name="Trip_Type">
-              <option>One Way</option>
-              <option selected>Round Trip</option>
+            <label for="tripType">Trip Type</label>
+            <select id="tripType" name="Trip_Type">
+              <option value="One Way">One Way</option>
+              <option value="Round Trip" selected>Round Trip</option>
             </select>
           </div>
         </div>
@@ -761,7 +762,7 @@
               <path
                 d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.13.96.36 1.9.68 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.91.32 1.85.55 2.81.68A2 2 0 0122 16.92z" />
             </svg></div>
-          <div><b>+44‑7345‑088622</b><span>Call or WhatsApp, 9am–6pm daily</span></div>
+          <div><b>+44‑7345‑088622 | +92-325-0718869 </b><span>Call or WhatsApp, 9am–6pm daily</span></div>
         </div>
         <div class="contact-row">
           <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.6">
@@ -857,7 +858,11 @@
         <ul>
           <li><a href="#faq">FAQs</a></li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="tel:+447345088622">Call Us</a></li>
+          <!-- <li>
+            Call Us:
+            <a href="tel:+447345088622">+44 7345 088622</a> |
+            <a href="tel:+923250718869">+92 325 0718869</a>
+          </li> -->
         </ul>
       </div>
       <div>
@@ -866,6 +871,7 @@
           <li><span>47-B Nawab Town Raiwand Road, Lahore, Pakistan</span></li>
           <li><a href="mailto:info@muwahidtravels.com">info@muwahidtravels.com</a></li>
           <li><a href="tel:+447345088622">+44‑7345‑088622</a></li>
+          <li><a href="tel:+923250718869">+92-325-0718869</a></li>
         </ul>
       </div>
     </div>
@@ -876,12 +882,27 @@
   </div>
 </footer>
 <!-- WHATSAPP FLOAT -->
-<a class="wa-float" href="https://wa.me/447345088622" target="_blank" aria-label="Chat on WhatsApp">
+<!-- <a class="wa-float" href="https://wa.me/447345088622" target="_blank" aria-label="Chat on WhatsApp">
   <svg viewBox="0 0 24 24">
     <path
       d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1-.2.2-.3.2-.6.1-1.6-.8-2.7-1.4-3.8-3.2-.1-.2 0-.4.1-.5l.5-.6c.1-.2.1-.4 0-.5-.1-.2-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.1 0 1.3.9 2.5 1.1 2.7.1.2 1.7 2.6 4.2 3.7 2 .9 2 .6 2.4.6.4 0 1.3-.5 1.5-1.1.2-.5.2-1 .1-1.1 0-.1-.2-.2-.5-.4zM12 2a10 10 0 100 20 10 10 0 000-20zm0 18.2a8.2 8.2 0 110-16.4 8.2 8.2 0 010 16.4z" />
   </svg>
-</a>
+</a> -->
+<div class="wa-dropdown">
+  <!-- Main Floating Button -->
+  <a class="wa-float" href="#" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24">
+      <path
+        d="M17.5 14.4c-.3-.1-1.7-.8-1.9-.9-.3-.1-.5-.1-.6.1-.2.3-.7.9-.9 1-.2.2-.3.2-.6.1-1.6-.8-2.7-1.4-3.8-3.2-.1-.2 0-.4.1-.5l.5-.6c.1-.2.1-.4 0-.5-.1-.2-.6-1.4-.8-1.9-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.2-.9.9-.9 2.1 0 1.3.9 2.5 1.1 2.7.1.2 1.7 2.6 4.2 3.7 2 .9 2 .6 2.4.6.4 0 1.3-.5 1.5-1.1.2-.5.2-1 .1-1.1 0-.1-.2-.2-.5-.4zM12 2a10 10 0 100 20 10 10 0 000-20zm0 18.2a8.2 8.2 0 110-16.4 8.2 8.2 0 010 16.4z" />
+    </svg>
+  </a>
+
+  <!-- Popup Menu with Two Numbers -->
+  <div class="wa-dropdown-content">
+    <a href="https://wa.me/447345088622" target="_blank">Chat (UK Support)</a>
+    <a href="https://wa.me/923250718869" target="_blank">Chat (PK Support)</a>
+  </div>
+</div>
 <script src="js/main.js"></script>
 <script>
   // Wire up nav, FAQ, and forms once the page has loaded
